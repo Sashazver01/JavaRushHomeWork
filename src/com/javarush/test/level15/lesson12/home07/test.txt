@@ -1,0 +1,2 @@
+/home/alexandr/Idea/ArhivJavaRush/JavaRushHomeWork/src/com/javarush/test/level15/lesson12/home07
+/home/alexandr/Idea/ArhivJavaRush/JavaRushHomeWork/src/com/javarush/test/level15/lesson12/home07/test.txt

@@ -1,0 +1,32 @@
+/home/alexandr/Idea/ArhivJavaRush/JavaRushHomeWork/src/com/javarush/test/level15/lesson12/home07
+/home/alexandr/Idea/ArhivJavaRush/JavaRushHomeWork/src/com/javarush/test/level15/lesson12/test.txt
+static
+    {
+        InputStream inputStream;
+        try
+        {
+            inputStream = new FileInputStream(Constants.FILE_NAME);
+            String sum = "";
+            char s ;
+            while (inputStream.available() >0)
+            {
+                int data =  inputStream.read();
+                s = (char)data;
+                if (System.getProperty("line.separator").equals(""+s))
+                {
+                    lines.add(sum);
+                    sum = "";
+                }
+                else
+                {
+                    sum = sum +s;
+                }            }
+           inputStream.close();
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+
+        }
+
+    }
